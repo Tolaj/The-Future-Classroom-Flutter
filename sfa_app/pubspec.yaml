@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   hexcolor: ^2.0.4
   google_fonts: ^2.1.0
-
+  font_awesome_flutter: ^9.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -66,6 +66,11 @@ flutter:
     - assets/images/TittleLogo2.png
     - assets/images/add1.png
     - assets/images/add1_2.png
+    - assets/images/patch1.png
+    - assets/images/logo2.PNG
+    - assets/images/logo4.png
+    - assets/images/patch2.png
+    - assets/images/patch4.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

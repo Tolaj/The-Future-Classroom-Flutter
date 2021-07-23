@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sfa_app/NavBar.dart';
 import 'package:sfa_app/BottomNavBar.dart';
 import 'package:sfa_app/HomePage.dart';
+import 'package:sfa_app/LoginPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'The Future Classroom',
       theme: ThemeData(
         primaryColor: '2E2E2E'.toColor(),
@@ -36,6 +38,7 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+          resizeToAvoidBottomInset: false,
         drawer: NavBar(),
         appBar: AppBar(
           title: Transform(
@@ -54,7 +57,7 @@ class _RootPageState extends State<RootPage> {
           children: [
             Divider(color: Colors.grey, height: .3),
             Expanded(
-                child: HomePage()
+                child: HomePage()     // LoginPage() to display login page
             ),
             Divider(color: Colors.grey, height: 1,),
             BottomNavBar()
